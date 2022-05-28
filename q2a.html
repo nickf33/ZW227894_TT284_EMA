@@ -1,0 +1,117 @@
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>tt284-ema</title>
+  <meta content="width=device-width, initial-scale=1" name="viewport">
+
+  <link href="css/q2a.css" rel="stylesheet" type="text/css"></head>
+<body>
+  <!-- Navigation starts, includes side and top areas -->
+  <!-- Side nav -->
+  <div class="side-nav">
+      <div class="logo-wrap">
+        <div class="logo-icon"></div>
+        <div class="logo-text">OU Walking club</div>
+      </div>
+      <div class="nav-list-wrap">
+        <div class="nav-item-wrap">
+          <div class="nav-item-icon"></div>
+          <div class="nav-item-text">Events</div>
+        </div>
+        <div class="nav-item-wrap">
+          <div class="nav-item-icon"></div>
+          <div class="nav-item-text">Memebers</div>
+        </div>
+        <div class="nav-item-wrap">
+          <div class="nav-item-icon"></div>
+          <div class="nav-item-text">News Items</div>
+        </div>
+        <div class="nav-item-wrap">
+          <div class="nav-item-icon"></div>
+          <div class="nav-item-text">Anouncements</div>
+        </div>
+        <div class="nav-item-wrap">
+          <div class="nav-item-icon"></div>
+          <div class="nav-item-text">Dashboard</div>
+        </div>
+      </div>
+    </div>
+    <!-- Top search and user info --> 
+    <div class="user-area">
+      <div class="search-bar">
+          <div class="search-text">search...</div>
+      </div>
+      <div class="user-info-wrap">
+          <div class="user-icon"></div>
+        <div class="user-info-arrow"></div>
+      </div>
+    </div>
+  <!-- Main area add event fields -->
+    <main>
+      <div class="title-wrap">
+        <h1>Add new event</h1>
+        <p> add the details of your walk event below</p>
+      </div>
+
+      <form action="http://students.open.ac.uk/mct/tt284/reflect/reflect.php">
+        <input type="hidden" id="sessionID" name="sessionID" value="abcd1234-ee56-ff78-9090">
+
+        <label for="name_of_walk">Event Name:</label>
+        <input type="text" name="event_name">
+
+        <label for="description">Description:</label>
+        <textarea name="description" style="height:6rem"></textarea>
+
+        <div class="form-item-stack">
+          <div class="form-item">
+            <label for="date">Date:</label>
+            <input type="date"  name="event_date">
+          </div>
+          <div class="form-item">
+            <label for="start_time">Start time</label>
+            <input type="time"  name="start_time">
+          </div>
+          <div class="form-item">
+            <label for="end_time">End time</label>
+            <input type="time"  name="end_time">
+          </div>
+      </div>
+        <label for="meeting_point">Meeting point</label>
+        <input type="text" name="meeting_point">
+
+        <label for="main_img">Add images:</label>
+        <input type="file" id="main_img" name="main_img">
+        <input type="submit">
+
+        <input type="file" id="banner_img" name="banner_img">
+        <input type="submit">
+
+        <label for="distance">Distance in kilometers:</label>
+        <select id="distance" name="distance">
+          <option>1 km</option>
+          <option>2 km</option>
+          <option>3 km</option>
+          <option>4 km</option>
+          <option>5 km</option>
+          <option>6 km</option>
+          <option>7 km</option>
+          <option>8 km</option>
+          <option>9 km</option>
+          <option>10+ km</option>
+        </select>
+
+        <label for="leader">Name of leader</label>
+        <input type="text" name="leader">
+        
+        <label for="Status">Status</label>
+        <select id="Status" name="Status">
+          <option value="Proposed">Proposed</option>
+          <option value="Approved ">Approved </option>
+          <option value="Rejected">Rejected</option>
+        </select>
+
+        <input type="submit" value="Submit">
+      </form>
+    </main> 
+</body>
+</html>
