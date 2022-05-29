@@ -8,10 +8,16 @@
 <body>
   <!-- Navigation starts, includes side and top areas -->
   <!-- Side nav -->
+  <div class="mobile-menu-icon">
+    <div class="mm-line"></div>
+    <div class="mm-line"></div>
+    <div class="mm-line"></div>
+  </div>
+
   <div class="side-nav">
       <div class="logo-wrap">
         <div class="logo-icon"></div>
-        <div class="logo-text">OU Walking club</div>
+        <div class="logo-text">OU Walking Club</div>
       </div>
       <div class="nav-list-wrap">
         <div class="nav-item-wrap">
@@ -67,10 +73,12 @@
             <label for="date">Date:</label>
             <input type="date"  name="event_date">
           </div>
+
           <div class="form-item">
             <label for="start_time">Start time</label>
             <input type="time"  name="start_time">
           </div>
+
           <div class="form-item">
             <label for="end_time">End time</label>
             <input type="time"  name="end_time">
@@ -78,13 +86,19 @@
       </div>
         <label for="meeting_point">Meeting point</label>
         <input type="text" name="meeting_point">
-
-        <label for="main_img">Add images:</label>
-        <input type="file" id="main_img" name="main_img">
-        <input type="submit">
-
-        <input type="file" id="banner_img" name="banner_img">
-        <input type="submit">
+        
+        <div class="form-item-stack">
+          
+          <div class="form-item">
+            <label for="main_img">Main Image:</label>
+            <input type="file" id="main_img" name="main_img" value="Main Image">
+          </div>
+          
+          <div class="form-item">
+            <label for="main_img">Banner Image:</label>
+            <input type="file" id="banner_img" name="banner_img" value="Banner Image">
+          </div>
+        </div>
 
         <label for="distance">Distance in kilometers:</label>
         <select id="distance" name="distance">
