@@ -190,3 +190,56 @@ input[type=file] {
 #banner_img {
     background-color: white;
 }
+
+@media only screen and (max-width: 775px) {
+    .search-bar {
+        display: none;
+    }
+
+    .user-area {
+        width: 100vw;
+    }
+
+    .user-icon {
+        margin-right: 0;
+    }
+
+    .user-info-arrow {
+        display: none;
+    }
+
+    .mobile-menu-icon {
+        position: fixed;
+        display: block;
+        transition:5s;
+    }
+    .mobile-menu-icon:hover + .side-nav {
+        left: 0;
+        display: flex;
+    }
+
+    .side-nav {
+        left: -100%;
+        width: 300px;
+        display: none;
+    }
+    .nav-list-wrap {
+        margin: 0 auto;
+        width: auto;
+    }
+    
+    main {
+        width: 80vw;
+        display: flex;
+        align-items: center;
+        margin: 10%;
+    }
+
+    .title-wrap {
+        margin: 4rem 10% 2rem;
+    }
+
+    .form-item-stack {
+        flex-direction: column;
+    }
+}
